@@ -1,0 +1,626 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Novecento Sans Condensed DemiBold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo general del encabezado */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* Altura inicial */
+  transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+main {
+  margin-top: 50vh;
+  /* Igual a la altura inicial del header */
+}
+
+.foto1 {
+  width: 100%;
+  height: 10%;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+header.scrolled+main {
+  margin-top: 80px;
+  /* Igual a la altura del header con clase "scrolled" */
+}
+
+*/ nav a:hover {
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  background-color: rgb(237, 237, 237);
+}
+
+li {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+.boton_header {
+  display: inline-block;
+  position: relative;
+}
+
+.boton_header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  /* Ajusta la posición vertical de la línea */
+  left: 0;
+  right: 0;
+  height: 2px;
+  /* Ajusta el grosor de la línea */
+  background-color: #ccc;
+  /* Ajusta el color de la línea */
+}
+
+.contenedor_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  padding: 1%;
+  background-color: rgb(237, 237, 237);
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* BANNER 1 */
+.banner1 {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner1:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenedor_imagen_banner_1 {
+  width: 32%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_imagen_banner_1 img {
+  width: 100%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta_contenido_banner_1 {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  padding-left: 2%;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* BANNER 2 */
+.banner2 {
+  width: 80%;
+  margin: 10% auto;
+}
+
+.contenedor_tarjetas_banner_2 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.tarjeta_banner_2 {
+  width: 25%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.contenedor_imagen_banner_2{
+  width: 100%;
+}
+.tarjeta_banner_2 img {
+  width: 100%;
+}
+
+.tarjeta_banner_2:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.titulo_banner_2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 20%;
+
+}
+
+.titulo_banner_2 h2 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* BANNER 3 */
+
+.banner_3 {
+  width: 80%;
+  margin: 10% auto;
+}
+
+.titulo_banner_3 {
+  width: 20%;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  width: 20%;
+
+}
+
+.contenedor_tarjetas_banner_3 {
+  width: 100%;
+  justify-content: center;
+}
+
+.seccion_parte_arriba {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 1rem;
+}
+
+.contenedor_imagen_banner_3 {
+  width: 100%;
+
+}
+
+.tarjeta_banner_3 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.contenedor_imagen_banner_3 img {
+  width: 100%;
+
+}
+
+.tarjeta_banner_3 h3 {
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.seccion_parte_abajo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta_banner_abajo_3 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+
+}
+
+.tarjeta_banner_3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta_banner_abajo_3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.contenedor_imagen_abajo_banner_3 {
+  width: 100%;
+}
+
+.contenedor_imagen__abajo_banner_3 img {
+  width: 100%;
+
+}
+
+.tarjeta_banner_abajo_3 h3 {
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+/* ------------------------------------------------------------------------------ */
+/* BANNER 4 */
+.banner_4 {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.contenedor_general_banner_4 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.seccion_titulo_banner_4 {
+  flex-direction: column;
+  margin-bottom: 2%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  width: 20%;
+
+}
+
+.seccion_titulo_banner_4 h2 {
+  width: 15%;
+  text-transform: uppercase;
+}
+
+.tarjeta_banner_4 {
+  width: 50%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedor_imagen {
+  width: 100%;
+  height: 90%;
+}
+
+.contenedor_imagen img {
+  width: 100%;
+}
+
+.tarjeta_banner_4:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* BANNER 5 */
+.banner_5 {
+  width: 80%;
+  margin: 10% auto;
+
+}
+
+.banner_5 p {
+  font-size: 17px;
+}
+
+.chart_left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 5%;
+
+}
+
+
+.chart_right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.contenedor_imagen_circular {
+  width: 25%;
+}
+
+.contenedor_imagen_circular img {
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+.seccion_titulo_banner_5 {
+  flex-direction: column;
+  margin-bottom: 3%;
+  width: 20%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.seccion_titulo_banner_5 h2 {
+  width: 15%;
+  text-transform: uppercase;
+
+}
+
+.chart_left:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chart_right:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* SECCION BANNER 5 ABAJO */
+.seccion_abajo_banner_5 {
+  width: 100%;
+  display: flex;
+  margin-top: 8%;
+  justify-content: space-around;
+  gap: 3rem;
+  text-align: center;
+}
+
+.tarjeta_seccion_abajo_banner_5 {
+  width: 30%;
+
+}
+
+.contenedor_imagen_seccion_abajo_banner_5 {
+  width: 100%;
+
+}
+
+.tarjeta_seccion_abajo_banner_5 img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.tarjeta_seccion_abajo_banner_5:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/* --------------------------------------------------------------------------- */
+/* BANNER 6 */
+.banner_6 {
+  width: 80%;
+  margin: 10% auto;
+}
+
+.seccion_titulo_banner_6 {
+  flex-direction: column;
+  margin-bottom: 1%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  width: 20%;
+}
+
+.seccion_titulo_banner_6 h2 {
+  width: 15%;
+  text-transform: uppercase;
+}
+
+.contenedor_retos_banner_6 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner_6_parte_arriba {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 23px;
+
+}
+
+.tarjeta_banner_6_parte_arriba {
+  width: 50%;
+  height: 100%;
+}
+
+.tarjeta_banner_6_parte_arriba img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0px 0px;
+
+}
+
+.banner_6_parte_abajo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 23px;
+
+}
+
+.tarjeta_banner_6_parte_abajo {
+  width: 50%;
+  height: 100%;
+
+}
+
+.tarjeta_banner_6_parte_abajo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 1rem 1rem;
+  margin-top: 14px;
+
+}
+
+.banner_6 h3 {
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta_banner_6_parte_arriba:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta_banner_6_parte_abajo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------------------------------- */
+/* BANNER 7 */
+.banner_7 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.seccion_titulo_banner_7 {
+  width: 100%;
+  margin-bottom: 0px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  width: 20%;
+}
+
+.seccion_titulo_banner_7 h2 {
+  width: 15%;
+  text-transform: uppercase;
+}
+
+.contenedor_parte_arriba_banner_7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+
+}
+
+.tarjeta_arriba_banner_7 {
+  width: 33%;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.tarjeta_arriba_banner_7 img {
+  width: 100%;
+
+}
+
+.contenedor_parte_abajo_banner_7 {
+  width: 100;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 1rem;
+
+}
+
+.tarjeta_abajo_banner_7 {
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1%;
+  border-radius: 1rem;
+}
+
+.tarjeta_abajo_banner_7 img {
+  width: 100%;
+}
+
+
+.f3 {
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+.f4 {
+  border-radius: 0px 1rem 1rem 0px;
+}
+
+.tarjeta_arriba_banner_7:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta_abajo_banner_7:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+/* ------------------------------------------------------------------------ */
+/* FOOTER */
+.footer{
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+  margin-top: 6%;
+}
+
+.contenedor_footer{
+  width: 80%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contenedor_logo_footer{
+  width:10%;
+  margin-left: 1%;
+}
+.contenedor_logo_footer img{ 
+  width: 100%;
+}
+.contenedor_logo_digitech_footer{
+  width:9%;
+  margin-right: 1%;
+
+}
+.contenedor_logo_digitech_footer img{ 
+  width: 100%;
+}
+.contenedor_texto_footer{
+  text-align: center;
+}
+.texto_footer:hover{
+color:white;
+}
